@@ -1,0 +1,13 @@
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Andrés','Guzmán','profesor@bolsaideas.com', '2018-01-01');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Cocoliso','Perez','coco@bolsaideas.com', '2018-01-02');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Japones','Chino','japo@bolsaideas.com', '2018-01-03');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Frances','Loopex','frances@bolsaideas.com', '2018-01-04');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Pollo','Sopa','posole@bolsaideas.com', '2018-01-05');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Andrés','Felipe','instructor@bolsaideas.com', '2018-01-06');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Detective','Guzmán','recolecto@bolsaideas.com', '2018-01-07');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Conan','Blazi','soñador@bolsaideas.com', '2018-01-04');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Samurai','Champloo','samuraic@bolsaideas.com', '2018-01-08');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Samurai','X','sx@bolsaideas.com', '2018-01-09');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Andrés','Obrador','mexicano@bolsaideas.com', '2018-11-10');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Dario','Guzmán','cabron@bolsaideas.com', '2018-01-11');
+INSERT INTO clientes (nombre, apellido, email, create_at) VALUES ('Jaime','Ferrer','Ferrer@bolsaideas.com', '2018-01-12');
