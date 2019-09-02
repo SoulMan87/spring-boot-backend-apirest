@@ -83,7 +83,6 @@ public class ClienteRestController {
 		Cliente clienteUpdate = null;
 
 		Map<String, Object> response = new HashMap<>();
-
 		if (clienteActual == null) {
 			response.put("mensaje", "Error: no se pudo editar, el cliente ID: "
 					.concat(id.toString().concat(" no existe en la base de datos!")));
@@ -102,7 +101,7 @@ public class ClienteRestController {
 			response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-
+		
 		response.put("mensaje", "El cliente ha sido actualizado con éxito!");
 		response.put("cliente", clienteUpdate);
 
@@ -111,20 +110,8 @@ public class ClienteRestController {
 	}
 
 	@DeleteMapping("/clientes/{id}")
-	public ResponseEntity<?> delete(@PathVariable Long id) {
-		Map<String, Object> response = new HashMap<>();
-
-		try {
-			clienteService.delete(id);
-
-		} catch (DataAccessException e) {
-			response.put("mensaje", "Error al eliminar el cliente en la base de datos");
-			response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
-			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-		}
-		
-		response.put("mensaje","El cliente ha sido eliminado con exito!");
-		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void delete(@PathVariable Long id) {
+		clienteService.delete(id);
 	}
-
 }
